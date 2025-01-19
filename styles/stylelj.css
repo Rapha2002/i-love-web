@@ -35,10 +35,10 @@ article:hover {
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 5em;
+    font-size: 20px;
     margin: 0;
     color: white;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     cursor: default;
 
 }
@@ -83,6 +83,7 @@ body {
         padding: 1em;
     
     }
+
 }
 
 
@@ -96,4 +97,10 @@ body {
         padding: 1em;
     
     }
+
+    header h1{
+        font-size: 80px;
+        letter-spacing: 10px;
+    }
+
 }
