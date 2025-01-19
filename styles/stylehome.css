@@ -6,7 +6,7 @@ article {
 	align-items: center;
 	justify-content: space-between;
 	margin:5em;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	justify-content: center;
 }
 
@@ -24,6 +24,7 @@ article a {
 	transform: scale(1.05);
 	transition: transform .2s;
 	font-size: 4vw;
+	padding-top: 10px;
 }
 
 article a:hover {
