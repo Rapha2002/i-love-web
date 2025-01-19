@@ -2,15 +2,19 @@
 article {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	display: flex;
-	align-items: baseline;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-between;
-	margin:5em
+	margin:5em;
+	letter-spacing: 5px;
+	justify-content: center;
 }
 
 article h1 {
 	color: white;
-	font-size: 60px;
 	text-shadow: 0px 0px 20px black;
+	font-size: 6vw;
+	cursor: default;
 }
 
 article a {
@@ -19,17 +23,18 @@ article a {
 	text-shadow: 0px 0px 20px black;
 	transform: scale(1.05);
 	transition: transform .2s;
+	font-size: 4vw;
 }
 
 article a:hover {
-    color: rgb(255, 117, 209);
+    color: rgb(235, 175, 216);
     transform: scale(1.2);
 }
 
 
 
 body {
-	background: linear-gradient(-45deg, #000000, #653900, #9b4313, #b99d02);
+	background: linear-gradient(-70deg, #1a0006, #2c002e, #180022, #190036, #001718);
 	background-size: 400% 100%;
 	animation: gradient 7s ease infinite;
 	height: 400vh;
