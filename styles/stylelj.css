@@ -35,12 +35,12 @@ article:hover {
 
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
     color: white;
     letter-spacing: 2px;
     cursor: default;
-
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.509);
 }
 
 header{
@@ -48,34 +48,54 @@ header{
     letter-spacing: 2px;
     margin: 3em;
     margin-bottom: none;
+    margin-top: none;
+    padding: none;
     
 }
 
 header a {
-    text-decoration: none;
-    font-size: 30px;
+    text-decoration:none;
+    letter-spacing: 2px;
+    font-size: 20px;
     color:white;
-    background: black;
     border-radius: 1em;
     transform: scale(1.05);
+    text-shadow: 0px 0px 20px black;
+    transition: transform .1s;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    align-items: baseline ;
 }
 
 header a:hover {
-    color: rgb(255, 55, 55);
+    color: rgb(255, 50, 128);
+    transform: scale(1.2);
 }
 
 body {
-    background: linear-gradient(150deg, rgb(0, 0, 0) 0%, rgb(22, 0, 112) 30%, rgb(95, 29, 62) 60%, rgb(94, 37, 24) 100%);
+	background: linear-gradient(-45deg, #1d001f, #0d0065, #00858c, #a10066);
+	background-size: 400% 100%;
+	animation: gradient 14s ease infinite;
+	height: 400vh;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
-@media (min-width:800px) {
+@media (min-width:750px) {
     .DailyCheckout {
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -89,7 +109,7 @@ body {
 
 
 
-@media (min-width:1100px) {
+@media (min-width:1200px) {
     .DailyCheckout {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr  ;
