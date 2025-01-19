@@ -1,0 +1,48 @@
+
+article {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	margin:5em
+}
+
+article h1 {
+	color: white;
+	font-size: 60px;
+	text-shadow: 0px 0px 20px black;
+}
+
+article a {
+	text-decoration: none;
+	color: white;
+	text-shadow: 0px 0px 20px black;
+	transform: scale(1.05);
+	transition: transform .2s;
+}
+
+article a:hover {
+    color: rgb(255, 117, 209);
+    transform: scale(1.2);
+}
+
+
+
+body {
+	background: linear-gradient(-45deg, #000000, #653900, #9b4313, #b99d02);
+	background-size: 400% 100%;
+	animation: gradient 7s ease infinite;
+	height: 400vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
