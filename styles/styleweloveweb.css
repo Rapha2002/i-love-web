@@ -75,7 +75,7 @@ header a {
 }
 
 header a:hover {
-    color: rgb(205, 255, 252);
+    color: rgb(223, 255, 205);
     transform: scale(1.2);
 }
 
