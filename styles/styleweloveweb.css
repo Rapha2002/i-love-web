@@ -1,0 +1,126 @@
+.DailyCheckout, h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.509);
+    color: white;
+} 
+
+a {
+    color: white;
+}
+
+article {
+    border-radius: 2em;
+    background: linear-gradient(350deg, rgb(0, 99, 43) 0%, rgb(0, 155, 36) 30%, rgb(128, 206, 11) 60%, rgb(255, 255, 0) 100%);
+    margin: 2em;
+    padding: 2em;
+    font-size: 16px;
+    transition: transform .18s;
+    cursor: default;
+    align-items: center;
+    max-height:22em ;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.509);
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+.DailyCheckout {
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 1em;
+    justify-content: center;
+
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6vw;
+    margin: 0;
+    color: white;
+    cursor: default;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.509);
+    transition: .2s;
+}
+
+header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    margin: 3em;
+    margin-bottom: none;
+    margin-top: none;
+    padding: none;
+    
+}
+
+header a {
+    text-decoration:none;
+    letter-spacing: 30%;
+    font-size: 4vw;
+    
+    color:white;
+    border-radius: 1em;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.509);
+    transition: .2s;
+    
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: baseline ;
+}
+
+header a:hover {
+    color: rgb(205, 255, 252);
+    transform: scale(1.2);
+}
+
+body {
+	background: linear-gradient(80deg, #00413e, #002610, #00592a, #0a6638, #269f7e);
+	background-size: 400% 100%;
+	animation: gradient 30s ease infinite;
+	height: 400vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (min-width:750px) {
+    .DailyCheckout {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 1em;
+    
+    }
+
+}
+
+
+
+
+@media (min-width:1200px) {
+    .DailyCheckout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 1em;
+    
+    }
+
+
+
+}

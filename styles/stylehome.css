@@ -1,3 +1,6 @@
+@view-transition{
+	navigation: auto;
+}
 
 article {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -10,9 +13,9 @@ article {
 article h1 {
 	color: white;
 	text-shadow: 0px 0px 20px black;
-	font-size: 9vw;
+	font-size: 7vw;
 	cursor: default;
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 article a {
@@ -21,7 +24,7 @@ article a {
 	text-shadow: 0px 0px 20px black;
 	transform: scale(1.05);
 	transition: transform .2s;
-	font-size: 5vw;
+	font-size: 4vw;
 	margin-top: 4%;
 	letter-spacing: 30%;
 }
